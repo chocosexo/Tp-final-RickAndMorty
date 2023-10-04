@@ -16,6 +16,14 @@ export function Character(){
 
 return (
     <div>
+        <div className= "a">
+            <div className="caca">
+                <a>Docs</a>
+                <span></span>
+                <a>About</a>
+        </div> 
+        <a>SUPPORT US</a>
+    </div>
         <div className="back">
             <h1>The Rick and Morty API</h1>
         </div> 
