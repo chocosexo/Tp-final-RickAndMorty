@@ -17,11 +17,12 @@ export function Character(){
 return (
     <div>
         <div className= "a">
-            <div className="caca">
+            <div className="docs">
                 <a>Docs</a>
-                <span></span>
-                <a>About</a>
         </div> 
+        <div className="a">
+            <a>About</a>
+        </div>
         <a>SUPPORT US</a>
     </div>
         <div className="back">
@@ -37,7 +38,18 @@ return (
                 <div className="columna1">
                     <div className="inter1">    
                     <h2 className="nombres">{item.name}</h2>
-                    <p className="muertoOVivo"> {item.status} - {item.species}</p>
+                    <p className="muertoOVivo"> {item.name}</p>
+                    {item.status === "Alive" ? (
+                        <p className="emo">
+                            {" "}
+                            🟢 {item.status} - {item.species}
+                        </p>
+                    ) : (
+                        <p className="emo">
+                            {" "}
+                            🔴 {item.status} - {species}
+                        </p>
+                    )}
                 </div>
                 <div className="inter2">  
                     <p className="subtitulos">Last Known Location</p>
@@ -57,3 +69,4 @@ return (
     </div>
 )
 }
+    

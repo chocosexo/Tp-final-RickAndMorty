@@ -76,7 +76,9 @@ img{
 .a{
     display:flex;
     justify-content: flex-end;
+    gap: 2%;
+    font-weight: bold;
 }
-.caca{
+.docs{
     outline:none;
 }
